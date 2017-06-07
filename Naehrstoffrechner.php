@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Vitals</title>
-    <script src="js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.circliful.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
     <script src="js/jquery-3.1.1.min.js"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
     <script src="js/jquery.circliful.js"></script>
+
 
  </head>
  <body>
@@ -147,6 +150,13 @@
          </div>
          <div class="col-md-4">
 
+            <select class="selectpicker">
+                 <option>Mustard</option>
+                 <option>Ketchup</option>
+                 <option>Relish</option>
+             </select>
+
+
              <div class="dropdown buttonSettings">
                  <button class="btn rechnerButton btn-primary dropdown-toggle" id="dropdownPerson" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                      Personentyp
@@ -159,6 +169,7 @@
                      <li><a href="#">Stillend</a></li>
                  </ul>
              </div>
+
              <div class="btn-group btn-group-justified buttonSettings" role="group" aria-label="hello">
                  <div class="btn-group" role="group">
                      <button class="btn rechnerButton btn-primary dropdown-toggle" id="dropdownFrucht" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -191,6 +202,12 @@
         <div class="col-md-1">
         </div>
      </div>
+    <script>
+            $('.selectpicker').selectpicker({
+                style: 'btn-info',
+                size: 4
+            });
+    </script>
      <script src="js/RechnerCharts.js"></script>
  </div>
  </body>
