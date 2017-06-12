@@ -138,6 +138,7 @@
                          <div class="progress rechnerBar">
                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
                                   aria-valuemin="0" aria-valuemax="100" style="width:30%">
+
                                  <p class="text-justify progressText">Kupfer</p>
                              </div>
                          </div>
