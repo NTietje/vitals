@@ -64,6 +64,16 @@ a, a:hover, a:active{
     border: 8px solid #8D003B;
 }
 
+
+
+.seasonbox {
+    align-items: left;
+    text-align: left;
+    display: table;
+    width: 100%;
+}
+
+
 .fruitbox {
     align-items: center;
     text-align: center;
@@ -121,8 +131,7 @@ a, a:hover, a:active{
 
 
 .nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding-left: 0!important;
 }
 
 .welcome > h1, .welcome > h2, .welcome > h3{
