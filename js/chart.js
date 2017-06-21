@@ -1,7 +1,6 @@
 var ctx = document.getElementById("chart");
 Chart.defaults.global.legend.display = false;
 
-
 loadJSON("json/fruits.json", function(response) {
     loadJSON("json/fruitdata.json", function(response2) {
 
@@ -10,7 +9,7 @@ loadJSON("json/fruits.json", function(response) {
         var fruitdata = JSON.parse(response2);
         console.log(fruitdata);
 
-        //Calculate in procent
+        /*//Calculate in procent
         var sum = 0;
         for(var i = 0; i < fruitdata.length; i++){
             sum += fruitdata[i];
@@ -20,34 +19,34 @@ loadJSON("json/fruits.json", function(response) {
             var procent = Math.round(fruitdata[i]/sum*100);
             fruitdata[i] = procent;
             console.log(fruitdata[i]);
-        }
+        }*/
 
         var data = {
             labels: [
                 fruits[0],
                 fruits[1],
-                fruits[2],
-                fruits[3]
+                fruits[2]
+                //fruits[3]
             ],
             datasets: [
                 {
                     data: [
                         fruitdata[0],
                         fruitdata[1],
-                        fruitdata[2],
-                        fruitdata[3]
+                        fruitdata[2]
+                        //fruitdata[3]
                     ],
                     backgroundColor: [
                         "#8D003B",
                         "#D9005B",
-                        "#EC3B86",
-                        "#EC6AA1"
+                        "#EC3B86"
+                        //"#EC6AA1"
                     ],
                     hoverBackgroundColor: [
                         "#6cae41",
                         "#6cae41",
-                        "#6cae41",
                         "#6cae41"
+                        //"#6cae41"
                     ]
                 }]
         };
@@ -58,6 +57,7 @@ loadJSON("json/fruits.json", function(response) {
                 animateScale:true
             }
         });
+
 
     });
 });

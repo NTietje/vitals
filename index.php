@@ -62,14 +62,14 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="panel panel-default maingreen welcome-tile">
                         <div class="panel-body">
-                            <h2><a href="/vitals/minerals.html">Mineralstoffe & <br>Spurenelemente</a></h2>
+                            <h2><a href="/vitals/mineral-spurenelement.php">Mineralstoffe & <br>Spurenelemente</a></h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card">
                     <div class="panel panel-default maingreen welcome-tile">
                         <div class="panel-body">
-                            <h2><a href="/vitals/Naehrstoffrechner.php">Nährstoffrechner</a></h2>
+                            <h2><a href="/vitals/naehrstoffrechner.php">Nährstoffrechner</a></h2>
                         </div>
                     </div>
                 </div>

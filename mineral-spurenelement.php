@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
     <title>Vitals</title>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -30,14 +30,14 @@ if ($con->connect_error) {
 }
 
 //sql query for vitaminname
-$sql = "SELECT Inhaltsstoff FROM zusatzinfo WHERE Kategorie = 'Vitamin'";
+$sql = "SELECT Inhaltsstoff FROM zusatzinfo WHERE NOT Kategorie = 'Vitamin'";
 $result = mysqli_query($con, $sql);
 
-$vitamins = array();
+$mineralSpurenele = array();
 
 //Content
 while($row = $result->fetch_row()) {
-    $vitamins[] = $row[0];
+    $mineralSpurenele[] = $row[0];
 }
 
 //Close connection
@@ -70,8 +70,8 @@ $con->close();
                     </div>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Vitamine<span class="sr-only">(current)</span></a></li>
-                    <li><a href="/vitals/mineral-spurenelement.php">Mineralstoffe & Spurenelemente</a></li>
+                    <li><a href="/vitals/vitamins.php">Vitamine<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="/vitals/mineral-spurenelement.php">Mineralstoffe & Spurenelemente</a></li>
                     <li><a href="/vitals/naehrstoffrechner.php">Nährstoffrechner</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -86,15 +86,15 @@ $con->close();
 
                 <?php
                 //Card for each vitamin in the database
-                for($i = 0; $i < count($vitamins); $i++){
+                for($i = 0; $i < count($mineralSpurenele); $i++){
                     echo '<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">';
                     echo '<div class="flip">';
                     echo '<div class="card">';
                     echo '<div class="face front">';
-                    $href = "/vitals/vitals-choose-x.php?vit=" . $vitamins[$i] ;
+                    $href = "/vitals/vitals-choose-x.php?vit=" . $mineralSpurenele[$i] ;
                     echo "<a href= $href>";
                     echo '<div class="box maingreen">';
-                    echo "<h2>$vitamins[$i]</h2>";
+                    echo "<h2>$mineralSpurenele[$i]</h2>";
                     echo '</div>';
                     echo '</a>';
                     echo ' </div>';
@@ -111,7 +111,6 @@ $con->close();
                 }
                 ?>
 
-            </div>
         </div>
         <script type="text/javascript">
             $('.flip').on('mouseenter', function(){

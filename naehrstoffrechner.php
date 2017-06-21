@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <title>Vitals</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.circliful.css">
-    <link rel="stylesheet" href="css/bootstrap-select.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery.circliful.js"></script>
-
+    <link rel="stylesheet" href="css/jquery.circliful.css">
+    <script src="js/bootstrap-select.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/style.css">
 
  </head>
  <body>
  <nav class="navbar navbar-default navbar-fixed-top top">
      <div class="container-fluid ">
 
-         <div class="col-md-1"></div>
-         <div class="col-md-10">
+         <div class="col-md-12">
              <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -42,12 +39,11 @@
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/vitals/vitamins.php">Vitamine<span class="sr-only">(current)</span></a></li>
-                    <li><a href="/vitals/minerals.html">Mineralstoffe & Spurenelemente</a></li>
-                    <li class="active"><a href="/vitals/Naehrstoffrechner.php">Nährstoffrechner</a></li>
+                    <li><a href="/vitals/mineral-spurenelement.php">Mineralstoffe & Spurenelemente</a></li>
+                    <li class="active"><a href="/vitals/naehrstoffrechner.php">Nährstoffrechner</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
-        <div class="col-md-1"></div>
     </div><!-- /.container-fluid -->
 </nav>
 <div class="container-fluid">
@@ -151,10 +147,11 @@
          </div>
          <div class="col-md-4">
 
-            <select class="selectpicker">
-                 <option>Mustard</option>
-                 <option>Ketchup</option>
-                 <option>Relish</option>
+             <select class="selectpicker" id="PersonentypButton">
+                 <option>Mann</option>
+                 <option>Frau</option>
+                 <option>Schwanger</option>
+                 <option>Stillend</option>
              </select>
 
 
@@ -205,11 +202,10 @@
      </div>
     <script>
             $('.selectpicker').selectpicker({
-                style: 'btn-info',
-                size: 4
+                style: 'btn-primary'
             });
     </script>
-     <script src="js/RechnerCharts.js"></script>
+    <script src="js/RechnerCharts.js"></script>
  </div>
  </body>
  </html>

@@ -5,12 +5,6 @@ a, a:hover, a:active{
     color:inherit;
 }
 
-/** {*/
-    /*-webkit-border-radius: 0 !important;*/
-    /*-moz-border-radius: 0 !important;*/
-    /*border-radius: 0 !important;*/
-/*}*/
-
 .maingray {
     background-color: #939393;
 }
@@ -64,13 +58,19 @@ a, a:hover, a:active{
     border: 8px solid #8D003B;
 }
 
+.fruitimg {
+    width:110px;
+}
 
+.seasonstyle {
+    width: 90%;
+    height: 30px;
+}
 
 .seasonbox {
     align-items: left;
     text-align: left;
     display: table;
-    width: 100%;
 }
 
 
@@ -78,13 +78,12 @@ a, a:hover, a:active{
     align-items: center;
     text-align: center;
     display: table;
-    width: 100%;
+    width: 95%;
 }
 
 .fruitcolorbox {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    margin-bottom: 10px;
 }
 
 .circular {
