@@ -46,7 +46,7 @@
     </div><!-- /.container-fluid -->
 </nav>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style="margin-left: 5px">
 
         <div class="col-md-1">
         </div>
