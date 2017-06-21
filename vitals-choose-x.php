@@ -92,8 +92,9 @@ file_put_contents("json/seasons.json", json_encode($seasons, JSON_NUMERIC_CHECK)
 
 <nav class="navbar navbar-default navbar-fixed-top top">
     <div class="container-fluid">
-
-        <div class="col-md-12">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -107,11 +108,7 @@ file_put_contents("json/seasons.json", json_encode($seasons, JSON_NUMERIC_CHECK)
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                </form>
+
                 <ul class="nav navbar-nav navbar-right">
 
                     <?php
@@ -130,6 +127,8 @@ file_put_contents("json/seasons.json", json_encode($seasons, JSON_NUMERIC_CHECK)
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
+        <div class="col-md-1">
+        </div>
     </div><!-- /.container-fluid -->
 </nav>
 <div class="container-fluid">
@@ -137,7 +136,7 @@ file_put_contents("json/seasons.json", json_encode($seasons, JSON_NUMERIC_CHECK)
         <div class="col-md-1 col-lg-2"></div>
         <div class="col-md-10 col-lg-8">
             <div class="row">
-                <div class="col-xs-12 col-sm-7 col-md-7" style="margin-bottom:20px;">
+                <div class="col-xs-12 col-sm-8 col-md-8" style="margin-bottom:20px;">
                     <?php
                     //Heading
                     echo "<h2>$vitalCategory $vit</h2>";
@@ -146,8 +145,8 @@ file_put_contents("json/seasons.json", json_encode($seasons, JSON_NUMERIC_CHECK)
                     echo $vitalText;
                     ?>
                 </div>
-                <div class="col-xs-12 col-sm-5 col-md-5">
-                    <canvas id="chart" style="margin-top:25px; margin-bottom: 10px;"></canvas>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <canvas id="chart" width="200%" style="margin-top:25px; margin-bottom: 10px; margin-left: 20px"></canvas>
                     <?php
                     //Subtitel of chart
                     echo "<p style='text-align: center'>Gehalt in $vitalUnit pro 100g</p>";
@@ -157,7 +156,6 @@ file_put_contents("json/seasons.json", json_encode($seasons, JSON_NUMERIC_CHECK)
 
                 <div class="row" >
                     <div style="margin-left: 30px">
-
 
                             <div class="fruitbox">
                                 <div class="col-md-12">
@@ -224,7 +222,6 @@ file_put_contents("json/seasons.json", json_encode($seasons, JSON_NUMERIC_CHECK)
 
                                 </div>
                             </div>
-
 
                     </div>
                 </div>
