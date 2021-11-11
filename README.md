@@ -1,5 +1,6 @@
 # Vitals
 Website about vitamins and minerals in fruits with SQL-database.
+
  **PHP | HTML | CSS | JavaScript | JQuery | Bootstrap**
  
 ![img1](images/image11.png)
